@@ -33,7 +33,7 @@ public class AppContext {
 	}
 
 	@Bean
-	public DataSource dataSource() {
+	public DataSource dataSource() {   //datasource
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName(environment.getRequiredProperty("jdbc.driverClassName"));
 		dataSource.setUrl(environment.getRequiredProperty("jdbc.url"));
