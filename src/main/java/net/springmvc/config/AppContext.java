@@ -1,4 +1,4 @@
-featurepackage net.springmvc.config;
+package net.springmvc.config;
 
 import java.util.Properties;
 
@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @PropertySource("classpath:database.properties")
 @EnableTransactionManagement
-public class AppContext {
+public class AppContext {   //AppCOntext starting point
 
 	@Autowired
 	private Environment environment;  //Environment
