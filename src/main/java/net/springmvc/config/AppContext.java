@@ -1,4 +1,4 @@
-package net.springmvc.config;
+featurepackage net.springmvc.config;
 
 import java.util.Properties;
 
