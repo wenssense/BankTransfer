@@ -21,11 +21,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class AppContext {
 
 	@Autowired
-	private Environment environment;
+	private Environment environment;  //Environment
 
 	@Bean
 	public LocalSessionFactoryBean sessionFactory() {
-		LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
+		LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();   //factorybean
 		sessionFactory.setDataSource(dataSource());
 		sessionFactory.setPackagesToScan(new String[] { "net.springmvc.entity" });
 		sessionFactory.setHibernateProperties(hibernateProperties());
